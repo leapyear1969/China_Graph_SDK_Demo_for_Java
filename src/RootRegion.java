@@ -7,12 +7,12 @@ import com.microsoft.graph.requests.extensions.GraphServiceClient;
 import java.util.ArrayList;
 
 public class RootRegion {
-    private String clientId="4855562c-304c-45ac-9bd3-d50109c4a145";
-    private String clientSecret="dRtL2-bEyUc5p8.X6Yr~mm59g_6r-CufKG";
+    private String clientId="YourClientID";
+    private String clientSecret="YourClientSecret";
     private String grantType = "client_credentials";
     private String tokenEndpoint = "https://login.partner.microsoftonline.cn/{teantId}/oauth2/v2.0/token";
     private String resourceId = "https://microsoftgraph.chinacloudapi.cn/.default";
-    private String teantId = "c832d4db-a148-45df-a716-f5d82985ba27";
+    private String teantId = "YourTenantID";
 
     public IGraphServiceClient graphServiceClient = null;
     public IGraphServiceClient GetClient(boolean authenticate)
